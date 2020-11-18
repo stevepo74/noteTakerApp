@@ -29,9 +29,9 @@ btnSaveNote.addEventListener('click', e => {
 		closeNote.classList.add('close');
 		closeNote.setAttribute('tabindex','0');
 		newSavedNote.setAttribute('class','savedNote');
-		newSavedNote.setAttribute('class', 'someClass');
-		newSavedNote = document.getElementById('blockofStuff').innerHTML;
-		document.getElementById('targetElement').appendChild(newSavedNote);
+		// newSavedNote.setAttribute('class', 'someClass');
+		// newSavedNote = document.getElementById('blockofStuff').innerHTML;
+		// document.getElementById('targetElement').appendChild(newSavedNote);
 		newSavedNote.innerHTML = closeNote.outerHTML + title + `<p>${textareaNote.value}</p>`;
 		savedNotes.appendChild(newSavedNote);
 		titleElem.value = "";
@@ -51,7 +51,6 @@ document.addEventListener('click', e => {
 });
 
 
-// !!! search google: how to make function that collects any number of args and do same function on all args
 
 // function clearValue(elem) {
 // 	elem.value = "";
